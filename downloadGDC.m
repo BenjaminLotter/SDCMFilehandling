@@ -14,7 +14,7 @@ function [subDownloadPath, retValue] = downloadGDC(manifest, downloadPath, descr
 %
 % Comments
 % * gdc-client is not fully reliable. Some files might be missing due to download/database errors.
-%   Always check consistency of downloads. Alternatively download files per hand or with other tools.
+%   Always check consistency of downloads. Alternatively download files by hand or with other tools.
 %%%
   fullManifestPath = getAbsPath(manifest);
   fullDownloadPath = getAbsPath(downloadPath);
