@@ -2,7 +2,7 @@
 *Filehandling tools to parse GDC transcriptome data into SDCM*
 
 This is a small collection of methods that automates the input of [GDC transcriptome data ](https://gdc.cancer.gov/) 
-into [the Matlab SDCM implementation by Michael Grau](https://github.com/GrauLab/SDCM).
+into the [Matlab SDCM implementation by Michael Grau](https://github.com/GrauLab/SDCM).
 
 Main files:
 * downloadGDC.m: Downloads data from GDC using a samplesheet. Needs [gdc-client](https://gdc.cancer.gov/access-data/gdc-data-transfer-tool) to run. Alternatively the files can be downloaded by hand or some other tool.
