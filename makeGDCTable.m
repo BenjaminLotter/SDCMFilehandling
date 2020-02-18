@@ -5,7 +5,7 @@ function [intensityTable, metaTable] = makeGDCTable(sampleSheetPath, dataPath, w
 % Inputs:
 % sampleSheetPath - full path to the sample sheet
 % dataPath        - full path to the downloaded GDC data
-% workflow          - Gene sequencing workflow used. 
+% workflow        - Gene sequencing workflow used. 
 % bDebug          - bool value that sets debug output. Default value: True.
 %
 % Outputs:
