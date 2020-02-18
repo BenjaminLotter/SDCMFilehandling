@@ -1,0 +1,6 @@
+function downloadGDC(manifest, downloadPath)
+  currDir=pwd;
+  !cd downloadPath
+end
+
+d
