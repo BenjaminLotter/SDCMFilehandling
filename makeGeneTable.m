@@ -82,7 +82,7 @@ function [intensityTable, metaTable] = makeGeneTable(sampleSheetPath, dataPath, 
       fprintf("%.2f%% of matched files were loaded.\n", 100*numFilesLoaded/numMatches)
     end
     if ~isnan(workflowConfig.workflows.(workflow).metaLines)
-      bIsMetaLine = startsWith(oldRowData.GeneID, workflowConfig.workflows.(workflow).metaLines);
+      bIsMetaLine = startsWith(oldRowData.Properties.RowNames, workflowConfig.workflows.(workflow).metaLines);
       intensityTable = oldRowData(~bIsMetaLine,:);
       metaTable = oldRowData(bIsMetaLine,:);
     else
