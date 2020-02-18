@@ -48,8 +48,8 @@ function workflowConfig = defaultWorkflowConfig()
   workflowConfig.workflows.star.headerLines = 1;
   workflowConfig.workflows.star.metaLines = '_'; 
   
-  workflowConfig.explanations.workflows.regexp = "Regexp string that is uniqely matched against the filnames provided by the samplesheet";
-  workflowConfig.explanations.workflows.indexcol = "column number that sets the table row-index (gene descriptors)";
+  workflowConfig.explanations.workflows.regexp = "Regexp string that is uniquely matched against the filenames provided by the samplesheet";
+  workflowConfig.explanations.workflows.indexcol = "column number that sets the table row-index (gene descriptors). Currently not used.";
   workflowConfig.explanations.workflows.countcol = "column number that sets the table data column";
   workflowConfig.explanations.workflows.headerLines = "number of lines on top to be skipped";
   workflowConfig.explanations.workflows.metaLines = "substring that denotes metadata in the files";
