@@ -3,8 +3,8 @@ function [intensityTable, metaTable] = makeGDCTable(sampleSheetPath, dataPath, w
 % Generate data- and metadata table from GDC download.
 %
 % Inputs:
-% sampleSheetPath - full path to the sample sheet
-% dataPath        - full path to the downloaded GDC data
+% sampleSheetPath - path to the sample sheet
+% dataPath        - path to the downloaded GDC data
 % workflow        - Gene sequencing workflow used. 
 % bDebug          - bool value that sets debug output. Default value: True.
 %
@@ -33,7 +33,7 @@ function [intensityTable, metaTable] = makeGDCTable(sampleSheetPath, dataPath, w
   if numMatches ==0
     intensityTable = NaN;
     metaTable = NaN;
-    warning('No matches were found for workflow "%s" in directory "%s"', workflow, getAbsPath(dataPath));
+    warning('No matches were found for workflow "%s" in samplesheet "%s"', workflow, getAbsPath(sampleSheetPath));
   else
     workflowMatchSheet = sampleSheet(workflowMatchArray,:);
 
