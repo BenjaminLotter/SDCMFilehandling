@@ -7,7 +7,7 @@ into the [Matlab SDCM implementation by Michael Grau](https://github.com/GrauLab
 #### Main files:
 * downloadGDC.m: Downloads data from GDC using a manifest. Needs [gdc-client](https://gdc.cancer.gov/access-data/gdc-data-transfer-tool) to run. Alternatively the files can be downloaded by hand or some other tool.
 * makeGDCTable.m: Parses the downloaded files into Matlab tables for data and metadata
-* runSDCM.m: Exemplatory implementation of a SDCM call
+* runSDCM.m: Exemplatory implementation of an SDCM call
 
 #### Helper Files:
 * defaultWorkflowConfig.m: Sets up the default settings for parsing GDC transcriptome data
