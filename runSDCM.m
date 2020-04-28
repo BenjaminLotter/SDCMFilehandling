@@ -24,7 +24,7 @@ function outInfo = runSDCM(inputTable, rootDir, additionalSDCMConfig)
   % Set up configutation
   rootDir = getAbsPath(rootDir);
   configuration = SDCM_defaultConfig(inputSize);
-  if (exist('sdcmConfigFile', 'var'))
+  if (exist('additionalSDCMConfig', 'var'))
     [configuration, ~] = mergeStructs(configuration, additionalSDCMConfig);
   end
   configuration.export.rootDir = char(rootDir);
